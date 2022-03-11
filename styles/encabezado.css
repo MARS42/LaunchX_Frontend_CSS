@@ -1,0 +1,36 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: rgb(26, 26, 161);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+header > .secciones {
+    display: flex;
+    align-items: center;
+}
+
+.secciones > * {
+    margin: 1em;
+    cursor: pointer;
+    color: rgb(46, 74, 116);
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.boton-navbar {
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+}
+
+.boton-navbar > h3 {
+    padding: 0.5em 1em;
+}
