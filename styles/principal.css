@@ -15,6 +15,11 @@ section > .dividido {
     justify-content: center;
 }
 
+.texto-informacion {
+    font-size: 2em;
+    color: rgb(46, 74, 116);
+}
+
 .dividido > .mitad > .informacion {
     width: 70%;
     height: 70%;
@@ -24,8 +29,6 @@ section > .dividido {
     grid-template-rows: repeat(7, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 1em;
-    font-size: 2em;
-    color: rgb(46, 74, 116);
 }
 
 .dividido > .mitad > .informacion > .div1 {
@@ -115,4 +118,73 @@ section > .completo > .tarjetas > .tarjeta {
     border-radius: 8px;
     padding: 2em;
     font-size: 1.3em;
+}
+
+.fondo-azul2 {
+    background-color: cornflowerblue;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 40%, cornflowerblue 40%);
+    position: relative;
+}
+
+.fondo-azul2 > img {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+}
+
+
+.dividido > .mitad > .informacion2 {
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 128px 0px;
+    margin-left: 32px;
+}
+
+.listado{
+    width: 70%;
+}
+
+.listado > .elemento {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+
+    border: 3px solid rgba(140, 157, 255, 0.137);
+    border-radius: 8px;
+    padding: 0.5em;
+}
+
+.emergencias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    width: 90%;
+}
+
+.emergencia {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 8px;
+grid-row-gap: 8px;
+font-size: 0.7em;;
+border: 3px solid rgba(140, 157, 255, 0.219);
+padding: 1em;
+border-radius: 8px;
+}
+
+.icon-emergencia { grid-area: 1 / 1 / 3 / 3; }
+.info-emergencia { grid-area: 1 / 3 / 2 / 5; }
+.cel-emergencia { grid-area: 2 / 3 / 3 / 5; }
+.boton-emergencia {
+    grid-area: 3 / 1 / 4 / 5;
+    background-color: rgba(140, 157, 255, 0.219);
+    color: blue;
+    text-align: center;
+    border-radius: 8px;
 }
